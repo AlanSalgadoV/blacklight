@@ -133,7 +133,7 @@ module Blacklight::Catalog
   # Check if any search parameters have been set
   # @return [Boolean]
   def has_search_parameters?
-    params[:q].present? || params[:f].present? || params[:search_field].present?
+    params[:q].present? || params[:f].present? || params[:search_field].present? || params[:clause].present?
   end
 
   # TODO: deprecate this constant with #facet_limit_for
